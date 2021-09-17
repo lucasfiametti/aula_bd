@@ -1,0 +1,27 @@
+Crimonosos:
+id (primary key)
+nome
+cpf
+idade
+
+Vitimas:
+id (primary key)
+nome 
+cpf
+idade
+
+Delitos:
+id (primary key)
+id_crimonoso (chave estrangeira)
+id_vitima (chave estrangeira)
+crime
+arma_utilizada
+
+vitimas -> delitos
+1 m	    1 m
+= M M
+
+crimonosos -> delitos  		
+1 m 		1 m
+= M M
+
